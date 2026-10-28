@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projects | Teodor Kostić</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header and navigation -->
+    <header class="site-header">
+        <nav class="navigation">
+
+            <a href="index.html" class="site-logo">
+                Teodor Kostić
+            </a>
+
+            <div class="nav-links">
+                <a href="about.html">About</a>
+                <a href="research.html">Research</a>
+                <a href="publications.html">Publications</a>
+                <a href="projects.html" aria-current="page">Projects</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- Main content -->
+    <main class="main-content page-content">
+
+        <h1 class="page-title">Projects</h1>
+
+        <p class="projects-intro">
+            This page presents selected theoretical and computational
+            projects related to solar physics and polarized radiative
+            transfer. It will document the underlying physical
+            models, numerical methods, and validation of the results.
+        </p>
+
+
+        <!-- Main project -->
+        <section class="project">
+
+            <h2>Polarized Radiative Transfer and the Hanle Effect</h2>
+
+            <p>
+                This project explores the theoretical description and
+                numerical modeling of polarized radiation in the solar
+                atmosphere, with particular emphasis on the Hanle effect
+                and the influence of magnetic fields on scattering
+                polarization.
+            </p>
+
+            <h3>Objectives</h3>
+
+            <ul>
+                <li>
+                    Understand the theoretical framework for polarized
+                    radiation and atomic polarization.
+                </li>
+                <li>
+                    Implement the relevant equations and tensor
+                    transformations in Python.
+                </li>
+                <li>
+                    Validate numerical results against analytical
+                    expressions and published reference calculations.
+                </li>
+                <li>
+                    Develop a foundation for more comprehensive models
+                    of polarized radiative transfer.
+                </li>
+            </ul>
+
+            <h3>Methods</h3>
+
+            <p>
+                The computational work uses Python and numerical methods
+                to investigate radiation anisotropy, magnetic-field
+                geometry, polarization tensors, and the resulting
+                Stokes parameters. JAX implementation is coming soon.
+            </p>
+
+            <h3>Current status</h3>
+
+            <p>
+                Ongoing work: implementing and validating the theoretical
+                formulation, with the aim of extending it toward
+                polarized radiative transfer calculations.
+            </p>
+
+            <!-- Add a repository or related publication when available -->
+            <!--
+            <p class="project-links">
+                <a href="REPOSITORY_URL">Source code</a>
+                ·
+                <a href="PUBLICATION_URL">Related publication</a>
+            </p>
+            -->
+
+        </section>
+
+
+        <!-- Additional projects can be added here -->
+
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>
+            &copy; <span id="year"></span> Teodor Kostić
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
+</html>

@@ -41,6 +41,7 @@
 
 html {
     scroll-behavior: smooth;
+    scrollbar-gutter: stable;
 }
 
 body {
@@ -209,7 +210,6 @@ a:focus-visible {
     color: var(--text);
 }
 
-
 /* =========================================
    Publications page
    ========================================= */
@@ -276,8 +276,62 @@ a:focus-visible {
 }
 
 
+/* =========================================
+   Projects page
+   ========================================= */
 
+.projects-intro {
+    margin: 0 0 36px;
+    font-size: 1rem;
+    line-height: 1.8;
+}
 
+.project {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--border);
+}
+
+.project:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.project h2 {
+    margin: 0 0 16px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+}
+
+.project h3 {
+    margin: 24px 0 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.project p,
+.project li {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.project p {
+    margin: 0 0 16px;
+}
+
+.project ul {
+    padding-left: 24px;
+    margin: 0 0 16px;
+}
+
+.project li {
+    padding-left: 4px;
+    margin-bottom: 6px;
+}
 
 /* =========================================
    4. Main content
