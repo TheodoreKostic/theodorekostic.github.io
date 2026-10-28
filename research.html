@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Research | Teodor Kostić</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header and navigation -->
+    <header class="site-header">
+        <nav class="navigation">
+
+            <a href="index.html" class="site-logo">
+                Teodor Kostić
+            </a>
+
+            <div class="nav-links">
+                <a href="about.html">About</a>
+                <a href="research.html" aria-current="page">Research</a>
+                <a href="publications.html">Publications</a>
+                <a href="projects.html">Projects</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- Main content -->
+    <main class="main-content page-content">
+
+        <h1 class="page-title">Research</h1>
+
+        <p class="research-intro">
+            My research focuses on solar physics, particularly the
+            theoretical description and numerical modeling of polarized
+            radiation in the solar atmosphere. I am interested in how
+            the polarization of spectral lines can provide information
+            about the physical conditions of the solar atmosphere and
+            its magnetic fields.
+        </p>
+
+
+        <!-- Main research topic -->
+        <section class="research-topic">
+
+            <h2>Polarized Radiative Transfer in the Solar Atmosphere</h2>
+
+            <p>
+                The radiation emerging from the solar atmosphere carries
+                information about the physical processes taking place
+                within it. In addition to its intensity, the polarization
+                of radiation provides important diagnostic information
+                about the properties of the emitting and scattering
+                material.
+            </p>
+
+            <p>
+                I am interested in the theoretical foundations of polarized
+                radiative transfer, including the description of radiation
+                through the Stokes parameters and the relationship between
+                radiation anisotropy, atomic polarization, and emergent
+                spectral line polarization.
+            </p>
+
+        </section>
+
+
+        <!-- Magnetic-field diagnostics -->
+        <section class="research-topic">
+
+            <h2>The Hanle Effect and Solar Magnetic Fields</h2>
+
+            <p>
+                The Hanle effect describes the modification of scattering
+                polarization by magnetic fields. It provides a diagnostic
+                tool for investigating magnetic fields in the solar
+                atmosphere through their influence on the polarization
+                of spectral lines.
+            </p>
+
+            <p>
+                My interests include the theoretical description of the
+                Hanle effect, the dependence of polarization on magnetic-field
+                strength and orientation, and the calculation and
+                interpretation of polarized signals for different observing
+                geometries.
+            </p>
+
+        </section>
+
+
+        <!-- Computational work -->
+        <section class="research-topic">
+
+            <h2>Numerical Modeling of Polarized Radiation</h2>
+
+            <p>
+                Numerical modeling provides a way to investigate the
+                theoretical relationships between radiation fields,
+                atomic polarization, magnetic fields, and observable
+                spectral line signals.
+            </p>
+
+            <p>
+                My computational work uses Python to implement and test
+                theoretical formulations of polarized radiation, examine
+                polarization in the presence of magnetic fields, and
+                reproduce analytical results and reference calculations.
+                This provides a foundation for further development of
+                models of polarized radiative transfer in the solar
+                atmosphere.
+            </p>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>
+            &copy; <span id="year"></span> Teodor Kostić
+        </p>
+    </footer>
+
+
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>

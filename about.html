@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About | Teodor Kostić</title>
+     <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header and navigation -->
+    <header class="site-header">
+        <nav class="navigation">
+
+            <a href="index.html" class="site-logo">
+                Teodor Kostić
+            </a>
+
+            <div class="nav-links">
+                <a href="about.html" aria-current="page">About</a>
+                <a href="research.html">Research</a>
+                <a href="publications.html">Publications</a>
+                <a href="projects.html">Projects</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- Main content -->
+    <main class="main-content page-content">
+
+        <h1 class="page-title">About</h1>
+
+        <section class="page-section">
+
+            <p>
+                I am a Research Assistant at the Astronomical Observatory
+                in Belgrade, Serbia.
+            </p>
+
+            <p>
+                My research interests include solar physics, particularly
+                polarized radiative transfer and the theoretical
+                interpretation of polarization in spectral lines :).
+            </p>
+
+            <p>
+                I am interested in understanding how radiation interacts
+                with matter in solar atmosphere, and how these
+                interactions can be used to investigate the physical
+                conditions in which the spectral line forms. Naturally,
+                given the nature of solar photosphere, I am interested
+                in how the magnetic field affects plasma, Zeeman and Hanle
+                effects and spectral lines that are susceptible to these.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>
+            &copy; <span id="year"></span> Teodor Kostić
+        </p>
+    </footer>
+
+
+    <!-- Automatically update the copyright year -->
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>

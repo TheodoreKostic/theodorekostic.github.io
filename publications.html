@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Publications | Teodor Kostić</title>
+
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header and navigation -->
+    <header class="site-header">
+        <nav class="navigation">
+
+            <a href="index.html" class="site-logo">
+                Teodor Kostić
+            </a>
+
+            <div class="nav-links">
+                <a href="about.html">About</a>
+                <a href="research.html">Research</a>
+                <a href="publications.html" aria-current="page">
+                    Publications
+                </a>
+                <a href="projects.html">Projects</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- Main content -->
+    <main class="main-content page-content">
+
+        <h1 class="page-title">Publications</h1>
+
+        <p class="publications-intro">
+            A list of my scientific publications and other research
+            contributions. Entries include links to the original
+            publications or available preprints where possible.
+        </p>
+
+
+        <!-- Publication list -->
+        <section class="publication-list" aria-label="Publication list">
+
+
+            <!-- Publication 1: Replace with your actual details -->
+            <article class="publication">
+
+                <h2 class="publication-title">
+                    <a href="PAPER_URL">
+                        Multi-height probing of horizontal flows in the solar photosphere 
+                    </a>
+                </h2>
+
+                <p class="publication-authors">
+                     Kostić, T.; Milić, I.; Rempel, M. ; Welsch, B.; Kazachenko, M.; Asensio Ramos, A.; Tremblay, B.
+                </p>
+
+                <p class="publication-venue">
+                    <em>Astronomy & Astrophysics</em>, Volume 705, A44, 11 pp, published: 06 January 2026.
+                </p>
+
+                <p class="publication-links">
+                    <a href="https://doi.org/10.1051/0004-6361/202556097">DOI</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="https://www.aanda.org/articles/aa/pdf/2026/01/aa56097-25.pdf">PDF</a>
+                </p>
+
+            </article>
+
+
+            <!-- Add additional publications by copying an article block -->
+
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>
+            &copy; <span id="year"></span> Teodor Kostić
+        </p>
+    </footer>
+
+
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
