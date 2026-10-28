@@ -83,8 +83,10 @@ body {
 }
 
 .site-logo {
-    font-size: 20px;
+    color: var(--text);
+    font-size: 19px;
     font-weight: 600;
+    letter-spacing: -0.02em;
     white-space: nowrap;
 }
 
@@ -107,7 +109,8 @@ a {
 }
 
 .nav-links a {
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 a:hover {
@@ -121,6 +124,160 @@ a:focus-visible {
     border-radius: 2px;
 }
 
+/* =========================================
+   Page headings and sections
+   ========================================= */
+
+.page-title {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.03em;
+
+    margin: 0 0 28px;
+}
+
+.page-section {
+    margin-bottom: 36px;
+}
+
+.page-section p {
+    margin: 0 0 18px;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.nav-links a[aria-current="page"] {
+    color: var(--text);
+    font-weight: 500;
+}
+
+/* =========================================
+   Research page
+   ========================================= */
+
+.research-intro {
+    margin: 0 0 36px;
+
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.research-topic {
+    padding: 0 0 30px;
+    margin: 0 0 30px;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.research-topic:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.research-topic h2 {
+    margin: 0 0 14px;
+
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+}
+
+.research-topic p {
+    margin: 0 0 16px;
+
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.research-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 12px;
+
+    margin-top: 18px;
+
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--muted);
+}
+
+.research-meta span:first-child {
+    font-weight: 600;
+    color: var(--text);
+}
+
+
+/* =========================================
+   Publications page
+   ========================================= */
+
+.publications-intro {
+    max-width: 580px;
+    margin: 0 0 32px;
+
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.publication {
+    padding: 0 0 22px;
+    margin: 0 0 22px;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.publication:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.publication-title {
+    margin: 0 0 8px;
+
+    font-size: 1.05rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.publication-title a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.publication-title a:hover {
+    color: var(--link);
+    text-decoration: underline;
+}
+
+.publication-authors,
+.publication-venue,
+.publication-links {
+    margin: 0 0 6px;
+
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.publication-authors,
+.publication-venue {
+    color: var(--muted);
+}
+
+.publication-links {
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.publication-links a {
+    font-size: 0.875rem;
+}
+
+
+
+
 
 /* =========================================
    4. Main content
@@ -131,7 +288,7 @@ a:focus-visible {
     max-width: var(--content-width);
 
     margin: 0 auto;
-    padding: 50px 30px 70px;
+    padding: 30px 30px 80px;
 
     flex: 1;
 }
@@ -175,34 +332,37 @@ a:focus-visible {
 /* Your name */
 
 .profile h1 {
-    margin: 0 0 8px;
-
-    font-size: clamp(32px, 5vw, 42px);
-    font-weight: 700;
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    font-weight: 600;
     line-height: 1.2;
-    letter-spacing: -1px;
+    letter-spacing: -0.04em;
+
 }
 
 
 /* Academic title or research interests */
 
 .profile-subtitle {
-    margin: 0 0 20px;
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 1.5;
 
     color: var(--muted);
-    font-size: 17px;
+
+    margin: 0 0 24px;
 }
 
 
 /* Short introduction */
 
 .profile-description {
-    max-width: 540px;
+    max-width: 580px;
 
-    margin: 0 auto 24px;
+    margin: 0 auto 28px;
 
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.8;
+    font-weight: 400;
 }
 
 
@@ -309,7 +469,7 @@ a:focus-visible {
     }
 
     .profile h1 {
-        letter-spacing: -0.5px;
+        letter-spacing: -0.03em;
     }
 
     .profile-subtitle {
@@ -326,7 +486,7 @@ a:focus-visible {
     width: 160px;
     height: 160px;
 
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 
     border-radius: 50%;
     object-fit: cover;
