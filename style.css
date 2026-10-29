@@ -17,19 +17,78 @@
 }
 
 
-/* Use the visitor's preferred dark theme */
+html[data-theme="dark"] {
+    color-scheme: dark;
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background: #1d1e20;
-        --text: #dadadb;
-        --muted: #a1a1aa;
-        --link: #8ab4f8;
-        --border: #383838;
-        --placeholder: #303136;
-    }
+    --background: #1d1e20;
+    --text: #dadadb;
+    --muted: #a1a1aa;
+    --link: #8ab4f8;
+    --border: #383838;
+    --placeholder: #303136;
 }
 
+
+/* Theme toggle */
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 36px;
+    height: 36px;
+    padding: 0;
+
+    border: 1px solid var(--border);
+    border-radius: 50%;
+
+    background: transparent;
+    color: var(--text);
+
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.theme-toggle:hover {
+    background: var(--placeholder);
+}
+
+.theme-toggle:focus-visible {
+    outline: 2px solid var(--link);
+    outline-offset: 3px;
+}
+
+.theme-toggle svg {
+    display: block;
+}
+
+/* Light mode: show the sun */
+.moon-icon {
+    display: none !important;
+}
+
+/* Dark mode: show the moon */
+html[data-theme="dark"] .sun-icon {
+    display: none;
+}
+
+html[data-theme="dark"] .moon-icon {
+    display: block !important;
+}
+
+@media (max-width: 650px) {
+    .nav-actions {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
 
 /* =========================================
    2. Basic page styling
