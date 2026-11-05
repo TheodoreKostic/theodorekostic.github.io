@@ -606,3 +606,9 @@ a:focus-visible {
 
     border: 1px solid var(--border);
 }
+
+.math-variable {
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}
