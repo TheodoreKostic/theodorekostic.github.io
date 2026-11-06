@@ -185,6 +185,170 @@
             -->
 
         </section>
+        <section class="project-gallery" aria-labelledby="gallery-title">
+            <h2 id="gallery-title">Selected results</h2>
+
+            <p class="gallery-intro">
+                A selection of numerical results obtained while reproducing
+                and extending the theoretical calculations presented in
+                Landi Degl’Innocenti &amp; Landolfi (2004), Chapter 13.
+            </p>
+
+            <div class="carousel" id="project-carousel">
+
+                <div class="carousel-slides">
+
+                    <figure class="carousel-slide">
+                        <img
+                            src="img/projects/radiation-anisotropy.png"
+                            alt="Fractional linear polarization as a function of the height parameter for different values of delta."
+                            loading="eager"
+                        >
+                        <figcaption>
+                            <h3>Radiation-field anisotropy</h3>
+                            <p>
+                                Dependence of the fractional linear polarization
+                                on the height parameter and the geometrical
+                                parameter δ, calculated using the radiation
+                                tensor ratio J²₀/J⁰₀.
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="carousel-slide" hidden>
+                        <img
+                            src="img/projects/hanle-diagram.png"
+                            alt="Hanle diagram showing polarization curves for different Hanle parameters."
+                            loading="lazy"
+                        >
+                        <figcaption>
+                            <h3>Hanle diagram for a transverse magnetic field</h3>
+                            <p>
+                                Variation of the polarization diagram with the
+                                Hanle parameter, illustrating the magnetic
+                                modification of the scattered radiation.
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="carousel-slide" hidden>
+                        <img
+                            src="img/projects/hanle-horizontal-field.png"
+                            alt="Stokes profiles and Hanle diagram for a horizontal magnetic field with an inclination of 90 degrees."
+                            loading="lazy"
+                        >
+                        <figcaption>
+                            <h3>Hanle effect: horizontal magnetic field</h3>
+                            <p>
+                                Stokes profiles and the corresponding Hanle
+                                diagram for a horizontal magnetic field,
+                                with θ<sub>B</sub> = 90° and
+                                θ<sub>obs</sub> = 60°.
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="carousel-slide" hidden>
+                        <img
+                            src="img/projects/hanle-inclined-field.png"
+                            alt="Stokes profiles and Hanle diagram for an inclined magnetic field with an inclination of 45 degrees."
+                            loading="lazy"
+                        >
+                        <figcaption>
+                            <h3>Hanle effect: inclined magnetic field</h3>
+                            <p>
+                                The same analysis for an inclined magnetic
+                                field, with θ<sub>B</sub> = 45°, illustrating
+                                the influence of magnetic-field orientation.
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="carousel-slide" hidden>
+                        <img
+                            src="img/projects/stokes-horizontal-field.png"
+                            alt="Frequency-dependent Stokes I, Q, U and V profiles for a horizontal magnetic field."
+                            loading="lazy"
+                        >
+                        <figcaption>
+                            <h3>Emergence of the four Stokes parameters</h3>
+                            <p>
+                                Frequency-dependent Stokes I, Q, U and V
+                                profiles for a selected magnetic-field
+                                configuration.
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="carousel-slide" hidden>
+                        <img
+                            src="img/projects/fractional-polarization.png"
+                            alt="Fractional Stokes polarization profiles across a spectral line, with reference values."
+                            loading="lazy"
+                        >
+                        <figcaption>
+                            <h3>Fractional polarization across the spectral line</h3>
+                            <p>
+                                Frequency dependence of Q/I, U/I and V/I,
+                                compared with the corresponding reference
+                                polarization values.
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="carousel-slide" hidden>
+                        <img
+                            src="img/projects/stokes-inclined-field.png"
+                            alt="Stokes I, Q, U and V profiles for an inclined magnetic field."
+                            loading="lazy"
+                        >
+                        <figcaption>
+                            <h3>Stokes profiles for an inclined magnetic field</h3>
+                            <p>
+                                Generalized calculation of the four Stokes
+                                profiles for an inclined magnetic field,
+                                with θ<sub>B</sub> = 45° and a non-zero
+                                magnetic azimuth.
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                </div>
+
+                <div class="carousel-controls">
+                    <button class="carousel-arrow" id="carousel-prev"
+                            type="button" aria-label="Previous figure">
+                        &#8592;
+                    </button>
+
+                    <div class="carousel-dots" aria-label="Choose a figure">
+                        <button class="carousel-dot active" type="button"
+                                aria-label="Show figure 1" aria-current="true"></button>
+                        <button class="carousel-dot" type="button"
+                                aria-label="Show figure 2"></button>
+                        <button class="carousel-dot" type="button"
+                                aria-label="Show figure 3"></button>
+                        <button class="carousel-dot" type="button"
+                                aria-label="Show figure 4"></button>
+                        <button class="carousel-dot" type="button"
+                                aria-label="Show figure 5"></button>
+                        <button class="carousel-dot" type="button"
+                                aria-label="Show figure 6"></button>
+                        <button class="carousel-dot" type="button"
+                                aria-label="Show figure 7"></button>
+                    </div>
+
+                    <button class="carousel-arrow" id="carousel-next"
+                            type="button" aria-label="Next figure">
+                        &#8594;
+                    </button>
+                </div>
+
+                <p class="carousel-status" id="carousel-status"
+                aria-live="polite">Figure 1 of 7</p>
+
+            </div>
+        </section>
 
 
         <!-- Additional projects can be added here -->
@@ -205,5 +369,6 @@
             new Date().getFullYear();
     </script>
     <script src="theme.js"></script>
+    <script src="carousel.js"></script>
 </body>
 </html>
