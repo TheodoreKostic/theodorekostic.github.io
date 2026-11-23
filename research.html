@@ -15,6 +15,24 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
         rel="stylesheet"
     >
+     <!-- MathJax configuration -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+
+    <!-- MathJax library -->
+    <script
+        defer
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
 
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="style.css">
@@ -126,6 +144,36 @@
                 spectral line polarization.
             </p>
 
+            <p>
+                Let's explore how the polarization comes into play. The aim is to calculate 
+                the emergent Stokes spectrum \(I\), where \(\mathbf{I} = (I, Q, U, V)^{\mathsf{T}}\)
+                is the so-called Stokes vector that describes the polarization state of the light.
+                \(\mathbf{I}\) is the solution of the polarized radiative transfer equation (e.g. [del Toro Iniesta 2003](#references)):
+
+                \[
+                \cos\theta \frac{\mathrm{d}\mathbf{I}(z,\theta,\lambda)}{\mathrm{d}z}
+                =
+                -\widetilde{\mathbf{K}}(z,\theta,\lambda)
+                \mathbf{I}(z,\theta,\lambda)
+                +
+                \mathbf{j}(z,\theta,\lambda),
+                \tag{1}
+                \]
+
+                where \(z\) is the vertical coordinate, \(\theta\) is the angle of propagation of the light with respect to \(z\),
+                and \(\lambda\) is the wavelength. \(\widetilde{\mathbf{K}}\) (a \(4\times4\) matrix) and \(\mathbf{j}\) (a 4-vector) are the propagation matrix and the emission vector,
+                respectively (for their exact form, see, e.g. [del Toro Iniesta 2003, Landi Degl'Innocenti & Landolfi 2004]). 
+                It is customary to replace the geometrical height \(z\) with the optical depth in the continuum, \(\tau\):
+
+                \[
+                \mathrm{d}\tau = -\chi(\lambda_0,z)\,\mathrm{d}z,
+                \tag{2}
+                \]
+
+                where \(\chi\) is the scalar (i.e. unpolarized) absorption coefficient. 
+                The reference wavelength \(\lambda_0\) is usually chosen to be \(5000\,&Aring;\).
+            </p>
+
         </section>
 
 
@@ -139,7 +187,19 @@
                 polarization by magnetic fields. It provides a diagnostic
                 tool for investigating magnetic fields in the solar
                 atmosphere through their influence on the polarization
-                of spectral lines.
+                of spectral lines. It is a promising avenue for advancing
+                our understanding of solar magnetic fields on small scales
+                (like microturbulent fields).
+            </p>
+
+            <p>
+                The Hanle effect is sensitive to the strength and orientation
+                of magnetic fields, making it a valuable tool for probing
+                the solar atmosphere's magnetic structure. By analyzing
+                the polarization signatures in spectral lines, one can
+                infer the properties of the underlying magnetic fields.
+                Moreover, the depolarization caused by the Hanle effect
+                can be used to estimate the magnetic field strength in regions where the Zeeman effect is weak.
             </p>
 
             <p>
